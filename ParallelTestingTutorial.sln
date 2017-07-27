@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelLocal", "ParallelLocal\ParallelLocal.csproj", "{2DF1ECB2-9D38-48DE-BE47-3E66014468DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserStackParallelTests", "BrowserStackParallelTests\BrowserStackParallelTests.csproj", "{3D6DD3D2-5CD4-49EE-A763-DF4B8ADFD3AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SauceLabsParallelTests", "SauceLabsParallelTests\SauceLabsParallelTests.csproj", "{18239345-BB62-4CE0-9953-9D271CF493DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appium_Tests", "Appium_Tests\Appium_Tests.csproj", "{2FF55CF6-4D12-4FF5-A521-96FF58B28A7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{18239345-BB62-4CE0-9953-9D271CF493DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18239345-BB62-4CE0-9953-9D271CF493DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18239345-BB62-4CE0-9953-9D271CF493DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FF55CF6-4D12-4FF5-A521-96FF58B28A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF55CF6-4D12-4FF5-A521-96FF58B28A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF55CF6-4D12-4FF5-A521-96FF58B28A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF55CF6-4D12-4FF5-A521-96FF58B28A7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
