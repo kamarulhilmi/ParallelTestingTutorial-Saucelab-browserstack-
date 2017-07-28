@@ -50,18 +50,21 @@ namespace Appium_Tests
             caps.SetCapability("name", TestContext.CurrentContext.Test.Name);
 
             driver = new RemoteWebDriver(new Uri("http://ondemand.saucelabs.com:80/wd/hub"), caps,
-                TimeSpan.FromSeconds(120));
+                TimeSpan.FromSeconds(600));
 
         }
 
         [Test]
         public void Appium_Saucelab_test_02()
         {
-            driver.FindElementById("OK").Click();
+            driver.FindElement(By.XPath("//XCUIElementTypeButton[@name=\"OK\"]")).Click();
             driver.FindElementById("IntegerA").SendKeys("100");
             driver.FindElementById("IntegerB").SendKeys("200");
-            var sum = driver.FindElementById("ComputeSumButton");
-            Assert.AreEqual("300", sum);
+            driver.FindElement(By.Id("ComputeSumButton")).Click();
+
+            var sum = driver.FindElement(By.Id("Answer"));
+            Assert.IsTrue(sum.Displayed, "The sum is present");
+            
         }
 
         [TearDown]
